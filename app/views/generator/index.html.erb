@@ -1,0 +1,34 @@
+<!-- Meat Chooser -->
+<% meatCnt = rand(5) %>
+<% if meatCnt > 0 %>
+	<%= chooser(Meat,15).meat %><br>on<br>
+<% else %>
+	<%= nil %>
+<% end %>
+
+<!-- Bread Chooser -->
+<%= chooser(Bread,5).bread %><br>
+with<br>
+
+<!-- Cheese Chooser -->
+<% cheeseCnt = rand(3) %>
+<% cheeseCnt.times do %>
+	<%= chooser(Cheese,2).cheese %> Cheese<br>
+<% end %>
+
+<!-- Vegetable Chooser -->
+<% vegetablesCnt = rand(10) %>
+<% vegetablesCnt.times do %>
+	<%= chooser(Vegetables,10).vegetables %><br>
+<% end %>
+and<br>
+
+<!-- Toppings Chooser -->
+<% toppingsCnt = rand(6) %>
+<% toppingsCnt.times do %>
+	<%= chooser(Toppings,9).toppings %><br>
+<% end %>
+
+<br>
+<%= link_to "Choose Again!", 'index' %>
+
