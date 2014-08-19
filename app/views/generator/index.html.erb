@@ -1,3 +1,5 @@
+<% array = [] %>
+
 <!-- Meat Chooser -->
 <% meatCnt = rand(5) %>
 <% if meatCnt > 0 %>
@@ -13,21 +15,21 @@ with<br>
 <!-- Cheese Chooser -->
 <% cheeseCnt = rand(3) %>
 <% cheeseCnt.times do %>
-	<%= chooser(Cheese,2).cheese %> Cheese<br>
+	<% array << chooser(Cheese,2).cheese %>
 <% end %>
 
 <!-- Vegetable Chooser -->
 <% vegetablesCnt = rand(10) %>
 <% vegetablesCnt.times do %>
-	<%= chooser(Vegetables,10).vegetables %><br>
+	<% array << chooser(Vegetables,10).vegetables %>
 <% end %>
-and<br>
 
 <!-- Toppings Chooser -->
 <% toppingsCnt = rand(6) %>
 <% toppingsCnt.times do %>
-	<%= chooser(Toppings,9).toppings %><br>
+	<% array << chooser(Toppings,9).toppings %>
 <% end %>
+<%= array.uniq.to_sentence %>
 
 <br>
 <%= link_to "Choose Again!", 'index' %>

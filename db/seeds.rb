@@ -11,7 +11,7 @@ Bread.create!([
 Cheese.destroy_all
 
 Cheese.create!([
-	{cheese: "American"},
+	{cheese: "American Cheese"},
 	{cheese: "Monterey Cheddar"}
 	])
 
@@ -33,15 +33,15 @@ Vegetables.create!([
 Toppings.destroy_all
 
 Toppings.create!([
-	{toppings: "Chipotle Southwest"},
+	{toppings: "Chipotle Southwest Sauce"},
 	{toppings: "Light Mayonnaise"},
 	{toppings: "Regular Mayonnaise"},
-	{toppings: "Ranch"},
+	{toppings: "Ranch Dressing"},
 	{toppings: "Oil"},
 	{toppings: "Honey Mustard"},
 	{toppings: "Mustard"},
 	{toppings: "Vinegar"},
-	{toppings: "Sweet Onion"}
+	{toppings: "Sweet Onion Sauce"}
 	])
 
 Meat.destroy_all
