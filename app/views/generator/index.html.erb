@@ -25,12 +25,29 @@ with<br>
 <% end %>
 
 <!-- Toppings Chooser -->
-<% toppingsCnt = rand(6) %>
+<% toppingsCnt = rand(5) %>
 <% toppingsCnt.times do %>
 	<% array << chooser(Toppings,9).toppings %>
 <% end %>
-<%= array.uniq.to_sentence %>
 
+<% ingredientAry = [] %>
+<% used = [] %>
+<% array.each do |ingredient| %>
+	<% if ingredientAry.include? ingredient %>
+		<% ingredientAry.map! {|x| x == ingredient ? "Double #{ingredient}" : x } %>
+		<% used << ingredient %>
+	<% elsif used.include? ingredient %>
+		<% nil %>
+	<% else %>
+		<% ingredientAry << ingredient %>
+	<% end %>
+<% end %>
+
+<%= ingredientAry.uniq.to_sentence %>
 <br>
 <%= link_to "Choose Again!", 'index' %>
+<br>
+
+
+
 
