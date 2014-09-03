@@ -1,8 +1,11 @@
 class GeneratorController < ApplicationController
   def index
-  end
 
+  end
+  def chooser(table)
+  	table.find(table.first.id + rand(table.count))
+	end
 end
-def chooser(table,rand)
-  	table.find(table.first.id + rand(rand))
+def chooser(table)
+  	table.find(table.first.id + rand(table.count))
 end
