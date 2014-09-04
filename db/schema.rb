@@ -11,37 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140818001932) do
+ActiveRecord::Schema.define(version: 20140904002450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "agains", force: true do |t|
+    t.string   "again"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "breads", force: true do |t|
-    t.string   "bread"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "cheeses", force: true do |t|
-    t.string   "cheese"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "meats", force: true do |t|
-    t.string   "meat"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "toppings", force: true do |t|
-    t.string   "toppings"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "vegetables", force: true do |t|
-    t.string   "vegetables"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

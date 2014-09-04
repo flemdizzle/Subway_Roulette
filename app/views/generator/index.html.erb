@@ -1,27 +1,21 @@
+<!-- All of this can go somewhere else -->
 <% array = [] %>
 <!-- Meat Chooser -->
 <% if rand(5) > 0 %>
-	<%= chooser(Meat).meat %><br>on<br>
+	<%= counter(Meat) %><br>on<br>
 <% else %>
 	<%= nil %>
 <% end %>
 <!-- Bread Chooser -->
-<%= chooser(Bread).bread %><br>
+<%= counter(Bread) %><br>
 with<br>
 <!-- Cheese Chooser -->
-<% rand(3).times do %>
-	<% array << chooser(Cheese).cheese %>
-<% end %>
+<% array << counter(Cheese,3) %>
 <!-- Vegetable Chooser -->
-<% rand(10).times do %>
-	<% array << chooser(Vegetables).vegetables %>
-<% end %>
+<% array << counter(Vegetables,10)%>
 <!-- Toppings Chooser -->
-<% rand(5).times do %>
-	<% array << chooser(Toppings).toppings %>
-<% end %>
-
-<!-- Sentence Creator -->
+<% array << counter(Toppings,5)%>
+<!-- "Double" Generator -->
 <% ingredientAry = [] %>
 <% used = [] %>
 <% array.each do |ingredient| %>
@@ -33,12 +27,15 @@ with<br>
 	<% else %>
 		<% ingredientAry << ingredient %>
 	<% end %>
-<% end %>
+<% end %> 
+<!-- Sentence Creator -->
 <%= ingredientAry.uniq.to_sentence %>
 <!-- Add custom Choose Again Button -->
 <br>
 <%= link_to "Choose Again!", 'index' %>
 <br>
+
+<%= counter(Toppings) %>
 
 
 

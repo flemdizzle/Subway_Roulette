@@ -1,71 +1,71 @@
 Bread.destroy_all
 
 Bread.create!([
-	{bread: "9-Grain Wheat"},
-	{bread:	"9-Grain Honey Oat"},
-	{bread: "Italian"},
-	{bread: "Italian Herbs & Cheese"},
-	{bread: "Flatbread"}
+	{name: "9-Grain Wheat"},
+	{name:	"9-Grain Honey Oat"},
+	{name: "Italian"},
+	{name: "Italian Herbs & Cheese"},
+	{name: "Flatbread"}
 	])
 
 Cheese.destroy_all
 
 Cheese.create!([
-	{cheese: "American Cheese"},
-	{cheese: "Monterey Cheddar"}
+	{name: "American Cheese"},
+	{name: "Monterey Cheddar"}
 	])
 
 Vegetables.destroy_all
 
 Vegetables.create!([
-	{vegetables: "Cucumbers"},
-	{vegetables: "Green Bell Peppers"},
-	{vegetables: "Lettuce"},
-	{vegetables: "Red Onions"},
-	{vegetables: "Spinach"},
-	{vegetables: "Tomatoes"},
-	{vegetables: "Banana Peppers"},
-	{vegetables: "Jalapenos"},
-	{vegetables: "Olives"},
-	{vegetables: "Pickles"}
+	{name: "Cucumbers"},
+	{name: "Green Bell Peppers"},
+	{name: "Lettuce"},
+	{name: "Red Onions"},
+	{name: "Spinach"},
+	{name: "Tomatoes"},
+	{name: "Banana Peppers"},
+	{name: "Jalapenos"},
+	{name: "Olives"},
+	{name: "Pickles"}
 	])
 
 Toppings.destroy_all
 
 Toppings.create!([
-	{toppings: "Chipotle Southwest Sauce"},
-	{toppings: "Light Mayonnaise"},
-	{toppings: "Regular Mayonnaise"},
-	{toppings: "Ranch Dressing"},
-	{toppings: "Oil"},
-	{toppings: "Honey Mustard"},
-	{toppings: "Mustard"},
-	{toppings: "Vinegar"},
-	{toppings: "Sweet Onion Sauce"}
+	{name: "Chipotle Southwest Sauce"},
+	{name: "Light Mayonnaise"},
+	{name: "Regular Mayonnaise"},
+	{name: "Ranch Dressing"},
+	{name: "Oil"},
+	{name: "Honey Mustard"},
+	{name: "Mustard"},
+	{name: "Vinegar"},
+	{name: "Sweet Onion Sauce"}
 	])
 
 Meat.destroy_all
 
 Meat.create!([
-	{meat: "Pulled Pork"},
-	{meat: "Oven Roated Chicken"},
-	{meat: "BBQ Steak and Bacon"},
-	{meat: "Black Forest Ham"},
-	{meat: "Bacon"},
-	{meat: "Buffalo Chicken"},
-	{meat: "Cold Cut Combo"},
-	{meat: "Italian B.M.T."},
-	{meat: "Meatball"},
-	{meat: "Roast Beef"},
-	{meat: "Spicy Italian"},
-	{meat: "Steak & Cheese"},
-	{meat: "Subway Club"},
-	{meat: "Sweet Onion Chicken Teriyaki"},
-	{meat: "Big Philly Cheesesteak"},
-	{meat: "Tuna"},
-	{meat: "Turkey & Bacon"},
-	{meat: "Turkey Breast"},
-	{meat: "Turkey Breast & Black Forest Ham"},
-	{meat: "Bacon & Egg"},
-	{meat: "Egg"}
+	{name: "Pulled Pork"},
+	{name: "Oven Roated Chicken"},
+	{name: "BBQ Steak and Bacon"},
+	{name: "Black Forest Ham"},
+	{name: "Bacon"},
+	{name: "Buffalo Chicken"},
+	{name: "Cold Cut Combo"},
+	{name: "Italian B.M.T."},
+	{name: "Meatball"},
+	{name: "Roast Beef"},
+	{name: "Spicy Italian"},
+	{name: "Steak & Cheese"},
+	{name: "Subway Club"},
+	{name: "Sweet Onion Chicken Teriyaki"},
+	{name: "Big Philly Cheesesteak"},
+	{name: "Tuna"},
+	{name: "Turkey & Bacon"},
+	{name: "Turkey Breast"},
+	{name: "Turkey Breast & Black Forest Ham"},
+	{name: "Bacon & Egg"},
+	{name: "Egg"}
 	])
