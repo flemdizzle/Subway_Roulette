@@ -1,15 +1,10 @@
 class GeneratorController < ApplicationController
   def index
-
+  	@foo = []
   end
 end
-def chooser(table)
-  	table.find(table.first.id + rand(table.count))
-	end
-def counter(table, num=2)
-	foo = []
-	rand(num).times do
-  		foo << table.find(table.first.id + rand(table.count)).name
+def counter(table,num=1)
+	rand(num)+1.times do
+  		@foo << table.find(table.first.id + rand(table.count)).name
   	end
-  	return foo
 end

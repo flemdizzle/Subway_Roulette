@@ -10,11 +10,11 @@
 <%= counter(Bread) %><br>
 with<br>
 <!-- Cheese Chooser -->
-<% array << counter(Cheese,3) %>
+<%= counter(Cheese,3) %>
 <!-- Vegetable Chooser -->
-<% array << counter(Vegetables,10)%>
+<%= counter(Vegetables,10)%>
 <!-- Toppings Chooser -->
-<% array << counter(Toppings,5)%>
+<%= counter(Toppings,5)%>
 <!-- "Double" Generator -->
 <% ingredientAry = [] %>
 <% used = [] %>
@@ -35,8 +35,7 @@ with<br>
 <%= link_to "Choose Again!", 'index' %>
 <br>
 
-<%= counter(Toppings) %>
-
+<%= @foo.to_sentence %>
 
 
 
