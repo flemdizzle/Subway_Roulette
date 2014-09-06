@@ -5,6 +5,5 @@ class FixColumnNames < ActiveRecord::Migration
   	rename_column :meats, :meat, :name
   	rename_column :toppings, :toppings, :name
   	rename_column :vegetables, :vegetables, :name
-
   end
 end
