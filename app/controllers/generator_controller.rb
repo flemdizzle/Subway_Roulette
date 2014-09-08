@@ -1,9 +1,20 @@
 class GeneratorController < ApplicationController
-  def index
-  	@foo = []
-  end
-end
+  	def index
+  		@foo = []
+  	end
 
+	def test
+		@sandwich = Vegetables.pull
+	end
+
+	def method_name
+	
+	end
+
+end
+def sCounter(table)
+	
+end
 def counter(table,num=1)
 	x = rand(num)+1
 	x.times do

@@ -5,7 +5,9 @@
 <% else %>
 	<% nil %>
 <% end %>
-
+<!-- Bread Counter -->
+<% counter(Bread) %><br>
+with<br>
 <!-- Cheese Chooser -->
 <% counter(Cheese,2) %>
 <!-- Vegetable Chooser -->
@@ -18,9 +20,6 @@
 <br>
 <%= link_to "Choose Again!", 'index' %>
 <br>
-<!-- Bread Chooser -->
-<% counter(Bread) %><br>
-with<br>
 <!-- "Double" Generator -->
 <% ingredientAry = [] %>
 <% used = [] %>
