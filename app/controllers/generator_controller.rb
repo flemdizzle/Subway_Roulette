@@ -4,20 +4,16 @@ class GeneratorController < ApplicationController
   	end
 
 	def test
-		@sandwich = Vegetables.pull
-	end
-
-	def method_name
 	
+		@choices = Cheese.counter(2) + Vegetables.counter(10) + Toppings.counter(4)
+		@sandwich = "#{Meat.counter}#{Bread.counter}"
+		# This doesn't work!
+		if @choice = nil
+			@ingredients = "Nothing!"
+		else
+			@ingredients = " #{@choices.to_sentence}"
+		end
+		@button = Again.counter
+		
 	end
-
-end
-def sCounter(table)
-	
-end
-def counter(table,num=1)
-	x = rand(num)+1
-	x.times do
-  		@foo << table.find(table.first.id + rand(table.count)).name
-  	end
 end
