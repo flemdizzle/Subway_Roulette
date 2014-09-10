@@ -1,18 +1,11 @@
 class GeneratorController < ApplicationController
-  	def index
-  		@foo = []
-  	end
 
-	def test
+	def index
 	
 		@choices = Cheese.counter(2) + Vegetables.counter(10) + Toppings.counter(4)
 		@sandwich = "#{Meat.counter}#{Bread.counter}"
-		# This doesn't work!
-		if @choice = nil
-			@ingredients = "Nothing!"
-		else
-			@ingredients = " #{@choices.to_sentence}"
-		end
+		@with = (@choices.empty? == true ? nil : "with")
+		@ingredients = " #{@choices.to_sentence}"
 		@button = Again.counter
 		
 	end

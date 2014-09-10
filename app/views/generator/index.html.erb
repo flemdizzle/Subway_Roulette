@@ -1,38 +1,9 @@
 
-<!-- Meat Chooser -->
-<% if rand(5) > 0 %>
-	<% counter(Meat) %><br>on<br>
-<% else %>
-	<% nil %>
-<% end %>
-<!-- Bread Counter -->
-<% counter(Bread) %><br>
-with<br>
-<!-- Cheese Chooser -->
-<% counter(Cheese,2) %>
-<!-- Vegetable Chooser -->
-<% counter(Vegetables,9)%>
-<!-- Toppings Chooser -->
-<% counter(Toppings,4)%>
-<!-- Output -->
-<%= @foo.to_sentence %>
-<!-- Add custom Choose Again Button -->
-<br>
-<%= link_to "Choose Again!", 'index' %>
-<br>
-<!-- "Double" Generator -->
-<% ingredientAry = [] %>
-<% used = [] %>
-<% @foo.each do |ingredient| %>
-	<% if ingredientAry.include? ingredient %>
-		<% ingredientAry.map! {|x| x == ingredient ? "Double #{ingredient}" : x } %>
-		<% used << ingredient %>
-	<% elsif used.include? ingredient %>
-		<% nil %>
-	<% else %>
-		<% ingredientAry << ingredient %>
-	<% end %>
-<% end %> 
-<!-- Sentence Output -->
-<%= ingredientAry.uniq.to_sentence %>
+<%= @sandwich %><br>
+<%= @with %><br>
+<%= @ingredients %><br>
+
+
+<%= link_to "#{@button}", 'index' %>
+
 
