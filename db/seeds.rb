@@ -69,3 +69,23 @@ Meat.create!([
 	{name: "Bacon & Egg"},
 	{name: "Egg"}
 	])
+
+Again.destroy_all
+
+Again.create!([
+	{again: "Choose again?"},
+	{again: "Need something worse?"},
+	{again: "Better luck next time?"},
+	{again: "They only get worse!"},
+	{again: "I can make one better than that!"},
+	{again: "Can't handle the awesomeness of this sub?"},
+	{again: "I knew you wouldn't actually eat that!"},
+	{again: "Want to see how much worse it can get?"},
+	{again: "The next sub rocks!"},
+	{again: "How do you feel about 'Double Ranch'?"},
+	{again: "I dare you to eat this next one!"},
+	{again: "This next one will be easy!"},
+	{again: "It's cool, wuss out!"},
+	{again: "Some are better than others!"},
+	{again: "Okay, last try!"}
+	])
