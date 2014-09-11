@@ -47,7 +47,7 @@ Toppings.create!([
 Meat.destroy_all
 
 Meat.create!([
-	{name: "Pulled Pork"},
+	{name: "Pulled Pork", sub_image: "image name.png"},
 	{name: "Oven Roated Chicken"},
 	{name: "BBQ Steak and Bacon"},
 	{name: "Black Forest Ham"},

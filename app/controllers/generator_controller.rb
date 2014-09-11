@@ -7,6 +7,7 @@ class GeneratorController < ApplicationController
 		@with = (@choices.empty? == true ? nil : "with")
 		@ingredients = " #{@choices.to_sentence}"
 		@button = Again.counter
+		# @sub_image = somthing
 		
 	end
 end

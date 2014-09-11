@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
 .background {
 	background-image: url("splash.png");
@@ -20,4 +22,20 @@
 
 .text{
 	text-align: center;
+}
+
+.color{
+	background-color: green;
+	height: 40px;
+	width: fill;
+}
+
+.blank{
+	height: 20px;
+}
+
+.sandwich{
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align: middle;
 }

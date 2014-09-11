@@ -8,4 +8,9 @@ class Meat < ActiveRecord::Base
 		end
 	end
 
+	def self.image
+		# result of model above [:id] find sub_image
+		
+	end
+
 end
