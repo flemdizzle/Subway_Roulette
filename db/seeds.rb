@@ -2,7 +2,7 @@ Bread.destroy_all
 
 Bread.create!([
 	{name: "9-Grain Wheat"},
-	{name:	"9-Grain Honey Oat"},
+	{name: "9-Grain Honey Oat"},
 	{name: "Italian"},
 	{name: "Italian Herbs & Cheese"},
 	{name: "Flatbread"}
@@ -47,27 +47,24 @@ Toppings.create!([
 Meat.destroy_all
 
 Meat.create!([
-	{name: "Pulled Pork", sub_image: "image name.png"},
-	{name: "Oven Roated Chicken"},
-	{name: "BBQ Steak and Bacon"},
-	{name: "Black Forest Ham"},
-	{name: "Bacon"},
-	{name: "Buffalo Chicken"},
-	{name: "Cold Cut Combo"},
-	{name: "Italian B.M.T."},
-	{name: "Meatball"},
-	{name: "Roast Beef"},
-	{name: "Spicy Italian"},
-	{name: "Steak & Cheese"},
-	{name: "Subway Club"},
-	{name: "Sweet Onion Chicken Teriyaki"},
-	{name: "Big Philly Cheesesteak"},
-	{name: "Tuna"},
-	{name: "Turkey & Bacon"},
-	{name: "Turkey Breast"},
-	{name: "Turkey Breast & Black Forest Ham"},
-	{name: "Bacon & Egg"},
-	{name: "Egg"}
+	{name: "Oven Roated Chicken", sub_image: "ovenroastedchicken.jpg"},
+	{name: "Black Forest Ham", sub_image: "blackforestham.jpg"},
+	{name: "Bacon", sub_image: "bacon.jpg"},
+	{name: "Buffalo Chicken", sub_image: "buffalochicken.jpg"},
+	{name: "Cold Cut Combo", sub_image: "coldcutcombo.jpg"},
+	{name: "Italian B.M.T.", sub_image: "italianbmt.jpg"},
+	{name: "Meatball", sub_image: "meatball.jpg"},
+	{name: "Roast Beef", sub_image: "roastbeef.jpg"},
+	{name: "Spicy Italian", sub_image: "spicyitalian.jpg"},
+	{name: "Steak & Cheese", sub_image: "steakcheese.jpg"},
+	{name: "Subway Club", sub_image: "subwayclub.jpg"},
+	{name: "Sweet Onion Chicken Teriyaki", sub_image: "sweetonionchickenteriyaki.jpg"},
+	{name: "Big Philly Cheesesteak", sub_image: "bigphillycheesesteak.jpg"},
+	{name: "Tuna", sub_image: "tuna.jpg"},
+	{name: "Turkey Breast", sub_image: "turkeybreast.jpg"},
+	{name: "Turkey Breast & Black Forest Ham", sub_image: "turkeybreastandblackforestham.jpg"},
+	{name: "Bacon & Egg", sub_image: "eggandcheese.jpg"},
+	{name: "Egg", sub_image: "eggandcheese.jpg"}
 	])
 
 Again.destroy_all

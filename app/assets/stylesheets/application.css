@@ -24,18 +24,26 @@
 	text-align: center;
 }
 
-.color{
+.color-bar{
 	background-color: green;
 	height: 40px;
-	width: fill;
+}
+
+.color-block{
+	background-color: green;
+	height: 80px;
 }
 
 .blank{
-	height: 20px;
+	height: 50px;
 }
 
 .sandwich{
 	font-size: 30px;
-	line-height: 30px;
-	vertical-align: middle;
+	line-height: 32px;
+}
+
+.main{
+	height: 250px;
+	
 }

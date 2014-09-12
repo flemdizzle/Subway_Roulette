@@ -2,15 +2,19 @@ class Meat < ActiveRecord::Base
 
 	def self.counter
 		if rand(5) > 0
-			self.find(self.first.id + rand(self.count)).name + " on "
+			@x = self.find(self.first.id + rand(self.count))
+			return @x.name + " on "
 		else
-			nil
+			@x = nil
 		end
 	end
 
 	def self.image
-		# result of model above [:id] find sub_image
-		
+		if @x.nil?	
+			return "none.jpg"
+		else
+			@x.sub_image
+		end
 	end
 
 end
