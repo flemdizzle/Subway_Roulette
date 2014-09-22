@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'generator/index'
-  get 'generator/test'
+  get 'generator/index', to: 'generator#index'
 
   root to: 'generator#landing'
 end
